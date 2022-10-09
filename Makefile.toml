@@ -1,0 +1,8 @@
+[tasks.build]
+args = ["build", "--dev", "--target", "web", "--out-name", "wasm", "--out-dir", "./static/dist/pkg"]
+command = "wasm-pack"
+watch = {ignore_pattern = "static/*"}
+
+#[tasks.serve]
+#command = "simple-http-server"
+#args = ["-i", "./static/public", "-p", "8080", "--nocache", "--try-file", "./static/public/index.html"]
